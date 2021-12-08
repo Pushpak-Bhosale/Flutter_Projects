@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc_pattern/counter_bloc.dart';
+import 'package:flutter_bloc_pattern/news_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: NewsPage(),
     );
   }
 }
@@ -46,17 +48,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  final _counterBloc = CounterBloc();
 
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
+  @override
+  void dispose() {
+    _counterBloc.dispose();
+    super.dispose();
   }
 
   @override
@@ -96,17 +93,43 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'You have pushed the button this many times:',
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
+            StreamBuilder<Object>(
+                stream: _counterBloc.counterStream,
+                initialData: 0,
+                builder: (context, snapshot) {
+                  return Text(
+                    '${snapshot.data}',
+                    style: Theme.of(context).textTheme.headline4,
+                  );
+                }),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            onPressed: () {
+              _counterBloc.eventSink.add(CounterAction.Increment);
+            },
+            tooltip: 'Increment',
+            child: Icon(Icons.add),
+          ),
+          FloatingActionButton(
+            onPressed: () {
+              _counterBloc.eventSink.add(CounterAction.Decrement);
+            },
+            tooltip: 'Decrement',
+            child: Icon(Icons.remove),
+          ),
+          FloatingActionButton(
+            onPressed: () {
+              _counterBloc.eventSink.add(CounterAction.Reset);
+            },
+            tooltip: 'Reset',
+            child: Icon(Icons.loop),
+          ),
+        ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

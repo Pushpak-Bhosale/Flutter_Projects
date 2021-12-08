@@ -1,0 +1,587 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS E:\Flutter_Projects\flutter_chat> npm install -g firebase-tools
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+C:\Users\Pushpak\AppData\Roaming\npm\firebase -> C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js
+
+> re2@1.16.0 install C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\re2
+
+Trying https://github.com/uhop/node-re2/releases/download/1.16.0/win32-x64-83.br ...
+Writing to build/Release/re2.node ...
+Done.
+
+> protobufjs@6.11.2 postinstall C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\protobufjs
+> node scripts/postinstall
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
++ firebase-tools@9.20.0
+PS E:\Flutter_Projects\flutter_chat> firebase init 
+firebase : File C:\Users\Pushpak\AppData\Roaming\npm\firebase.ps1 cannot be loaded because running scripts is disabled on this system. For      
+more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ ~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS E:\Flutter_Projects\flutter_chat> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+PS E:\Flutter_Projects\flutter_chat> firebase init
+
+Error: Failed to authenticate, have you run firebase login?
+PS E:\Flutter_Projects\flutter_chat> npm cache clean --force 
+npm WARN using --force I sure hope you know what you are doing.
+PS E:\Flutter_Projects\flutter_chat> firebase init
+
+Error: Failed to authenticate, have you run firebase login?
+
+Having trouble? Try firebase [command] --help
+i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+? Allow Firebase to collect CLI usage and error reporting information? Yes
+i  To change your data collection preference at any time, run `firebase logout` and log in again.
+
+Visit this URL on any device to log in:
+https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=441239809&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob
+
+? Paste authorization code here: 4/1AX4XfWjHDHsxB7w5ZXZKtpUSBhixA9tLJe5jZBN2F16uuuG1ETd2W7immZc
+
++  Success! Logged in as pushpakbhosaledeveloper@gmail.com
+PS E:\Flutter_Projects\flutter_chat> firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Flutter_Projects\flutter_chat
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. (Press <space> to select, <a> to toggle all, <i> to invert selection)
+
+Error: Must select at least one feature. Use SPACEBAR to select features, or specify a feature by running firebase init [feature_name]
+PS E:\Flutter_Projects\flutter_chat> firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##      
+     ######    ##  ########  ######   ########  #########  ######  ######  
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##      
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Flutter_Projects\flutter_chat
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. Functions: Configure a Cloud Functions directory and its files
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: flutter-chat-9dbfb (flutter-chat)
+i  Using project flutter-chat-9dbfb (flutter-chat)
+
+=== Functions Setup
+
+A functions directory will be created in your project with sample code
+pre-configured. Functions can be deployed with firebase deploy.
+
+? What language would you like to use to write Cloud Functions? JavaScript
+? Do you want to use ESLint to catch probable bugs and enforce style? Yes
++  Wrote functions/package.json
++  Wrote functions/.eslintrc.js
++  Wrote functions/index.js
++  Wrote functions/.gitignore
+? Do you want to install dependencies with npm now? Yes
+
+> protobufjs@6.11.2 postinstall E:\Flutter_Projects\flutter_chat\functions\node_modules\protobufjs
+> node scripts/postinstall
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+i  Using project flutter-chat-9dbfb (flutter-chat)
+
+=== Functions Setup
+
+A functions directory will be created in your project with sample code
+pre-configured. Functions can be deployed with firebase deploy.
+
+? What language would you like to use to write Cloud Functions? JavaScript
+? Do you want to use ESLint to catch probable bugs and enforce style? Yes
++  Wrote functions/package.json
++  Wrote functions/.eslintrc.js
++  Wrote functions/index.js
++  Wrote functions/.gitignore
+? Do you want to install dependencies with npm now? Yes
+
+> protobufjs@6.11.2 postinstall E:\Flutter_Projects\flutter_chat\functions\node_modules\protobufjs
+> node scripts/postinstall
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN @firebase/database-compat@0.1.2 requires a peer of @firebase/app-compat@0.x but none is installed. You must install peer dependencies yourself.
+ourself.
+
+added 329 packages from 254 contributors and audited 329 packages in 48.956s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
++  Firebase initialization complete!
+PS E:\Flutter_Projects\flutter_chat> firebase deploy
+
+=== Deploying to 'flutter-chat-9dbfb'...
+
+i  deploying functions
+Running command: npm --prefix "$RESOURCE_DIR" run lint
+
+> functions@ lint E:\Flutter_Projects\flutter_chat\functions
+> eslint .
+
+
+E:\Flutter_Projects\flutter_chat\functions\index.js
+  4:1   error  Expected indentation of 4 spaces but found 2   indent
+  4:13  error  Strings must use doublequote                   quotes
+  5:1   error  Expected indentation of 4 spaces but found 2   indent
+  6:1   error  Expected indentation of 6 spaces but found 5   indent
+  7:1   error  Expected indentation of 4 spaces but found 2   indent
+  7:6   error  Newline required at end of file but not found  eol-last
+
+✖ 6 problems (6 errors, 0 warnings)
+  6 errors and 0 warnings potentially fixable with the `--fix` option.
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! functions@ lint: `eslint .`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the functions@ lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Pushpak\AppData\Roaming\npm-cache\_logs\2021-10-18T13_24_51_316Z-debug.log
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn npm --prefix "%RESOURCE_DIR%" run lint ENOENT
+    at notFoundError (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:40:16)
+b\enoent.js:27:25)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12)
+Emitted 'error' event on ChildProcess instance at:
+    at ChildProcess.cp.emit (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:30:37)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12) {
+  code: 'ENOENT',
+  errno: 'ENOENT',
+  syscall: 'spawn npm --prefix "%RESOURCE_DIR%" run lint',
+  path: 'npm --prefix "%RESOURCE_DIR%" run lint',
+  spawnargs: []
+}
+
+Error: functions predeploy error: Command terminated with non-zero exit code1
+PS E:\Flutter_Projects\flutter_chat> firebase deploy
+
+=== Deploying to 'flutter-chat-9dbfb'...
+
+i  deploying functions
+Running command: npm --prefix "%RESOURCE_DIR%" run lint
+
+> functions@ lint E:\Flutter_Projects\flutter_chat\functions
+> eslint .
+
+
+E:\Flutter_Projects\flutter_chat\functions\index.js
+  4:1   error  Expected indentation of 4 spaces but found 2   indent
+  4:13  error  Strings must use doublequote                   quotes
+  5:1   error  Expected indentation of 4 spaces but found 2   indent
+  6:1   error  Expected indentation of 6 spaces but found 5   indent
+  7:1   error  Expected indentation of 4 spaces but found 2   indent
+  7:6   error  Newline required at end of file but not found  eol-last
+
+✖ 6 problems (6 errors, 0 warnings)
+  6 errors and 0 warnings potentially fixable with the `--fix` option.
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! functions@ lint: `eslint .`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the functions@ lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Pushpak\AppData\Roaming\npm-cache\_logs\2021-10-18T13_29_57_509Z-debug.log
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn npm --prefix "E:\Flutter_Projects\flutter_chat\functions" run lint ENOENT
+    at notFoundError (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:40:16)
+b\enoent.js:27:25)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12)
+Emitted 'error' event on ChildProcess instance at:
+    at ChildProcess.cp.emit (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:30:37)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12) {
+  code: 'ENOENT',
+  errno: 'ENOENT',
+  syscall: 'spawn npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run lint',
+  path: 'npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run lint',
+  spawnargs: []
+}
+
+Error: functions predeploy error: Command terminated with non-zero exit code1
+PS E:\Flutter_Projects\flutter_chat> firebase deploy
+
+=== Deploying to 'flutter-chat-9dbfb'...
+
+i  deploying functions
+Running command: npm --prefix "%RESOURCE_DIR%" run lint
+
+> functions@ lint E:\Flutter_Projects\flutter_chat\functions
+> eslint .
+
+
+E:\Flutter_Projects\flutter_chat\functions\index.js
+  4:1   error  Expected indentation of 4 spaces but found 2   indent
+  4:13  error  Strings must use doublequote                   quotes
+  5:1   error  Expected indentation of 4 spaces but found 2   indent
+  6:1   error  Expected indentation of 6 spaces but found 5   indent
+  7:1   error  Expected indentation of 4 spaces but found 2   indent
+  7:6   error  Newline required at end of file but not found  eol-last
+
+✖ 6 problems (6 errors, 0 warnings)
+  6 errors and 0 warnings potentially fixable with the `--fix` option.
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! functions@ lint: `eslint .`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the functions@ lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Pushpak\AppData\Roaming\npm-cache\_logs\2021-10-18T13_31_41_007Z-debug.log
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn npm --prefix "E:\Flutter_Projects\flutter_chat\functions" run lint ENOENT
+    at notFoundError (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at ChildProcess.cp.emit (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:27:25)
+Emitted 'error' event on ChildProcess instance at:
+    at ChildProcess.cp.emit (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:30:37)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12) {
+  code: 'ENOENT',
+  errno: 'ENOENT',
+  syscall: 'spawn npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run lint',
+  path: 'npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run lint',
+  spawnargs: []
+}
+
+Error: functions predeploy error: Command terminated with non-zero exit code1
+
+Having trouble? Try firebase [command] --help
+PS E:\Flutter_Projects\flutter_chat> firebase --help
+Usage: firebase [options] [command]
+
+Options:
+  -V, --version                                               output the version number
+  -P, --project <alias_or_project_id>                         the Firebase project to use for this command
+  --account <email>                                           the Google account to use for authorization
+  -j, --json                                                  output JSON instead of text, also triggers non-interactive mode
+  --token <token>                                             supply an auth token for this command
+  --non-interactive                                           error out of the command instead of waiting for prompts
+  -i, --interactive                                           force prompts to be displayed
+  --debug                                                     print verbose debug output and keep a debug log file
+  -c, --config <path>                                         path to the firebase.json file to use for configuration
+  -h, --help                                                  output usage information
+
+Commands:
+  appdistribution:distribute [options] <release-binary-file>  upload a release binary
+  appdistribution:testers:add [options] [emails...]           add testers to project
+  appdistribution:testers:remove [options] [emails...]        remove testers from a project
+  apps:create [options] [platform] [displayName]              create a new Firebase app. [platform] can be IOS, ANDROID or WEB (case
+                                                              insensitive).
+  apps:list [platform]                                        list the registered apps of a Firebase project. Optionally filter apps by
+                                                              [platform]: IOS, ANDROID or WEB (case insensitive)
+  apps:sdkconfig [options] [platform] [appId]                 print the Google Services config of a Firebase app. [platform] can be IOS,        
+                                                              ANDROID or WEB (case insensitive)
+  apps:android:sha:list <appId>                               list the SHA certificate hashes for a given app id.
+  apps:android:sha:create <appId> <shaHash>                   add a SHA certificate hash for a given app id.
+  apps:android:sha:delete <appId> <shaId>                     delete a SHA certificate hash for a given app id.
+  auth:export [options] [dataFile]                            Export accounts from your Firebase project into a data file
+  auth:import [options] [dataFile]                            import users into your Firebase project from a data file(.csv or .json)
+  database:get [options] <path>                               fetch and print JSON data at the specified path
+  database:instances:create [options] <instanceName>          create a realtime database instance
+  database:instances:list                                     list realtime database instances, optionally filtered by a specified location     
+  database:profile [options]                                  profile the Realtime Database and generate a usage report
+  database:push [options] <path> [infile]                     add a new JSON object to a list of data in your Firebase
+  database:remove [options] <path>                            remove data from your Firebase at the specified path
+  database:set [options] <path> [infile]                      store JSON data at the specified path via STDIN, arg, or file
+  database:settings:get [options] <path>                      read the realtime database setting at path
+  database:settings:set [options] <path> <value>              set the realtime database setting at path.
+  database:update [options] <path> [infile]                   update some of the keys for the defined path in your Firebase
+  deploy [options]                                            deploy code and assets to your Firebase project
+  emulators:exec [options] <script>                           start the local Firebase emulators, run a test script, then shut down the
+                                                              emulators
+  emulators:export [options] <path>                           export data from running emulators
+  emulators:start [options]                                   start the local Firebase emulators
+  experimental:functions:shell [options]                      launch full Node shell with emulated functions. (Alias for `firebase
+                                                              functions:shell.)
+  ext                                                         display information on how to use ext commands and extensions installed to your   
+                                                              project
+  ext:configure [options] <extensionInstanceId>               configure an existing extension instance
+  ext:info [options] <extensionName>                          display information about an extension by name (extensionName@x.y.z for a
+                                                              specific version)
+  ext:install [options] [extensionName]                       install an official extension if [extensionName] or [extensionName@version] is    
+                                                              provided; or run with `-i` to see all available extensions.
+  ext:list                                                    list all the extensions that are installed in your Firebase project
+  ext:uninstall [options] <extensionInstanceId>               uninstall an extension that is installed in your Firebase project by instance     
+                                                              ID
+  ext:update [options] <extensionInstanceId> [updateSource]   update an existing extension instance to the latest version
+  firestore:delete [options] [path]                           Delete data from Cloud Firestore.
+  firestore:indexes [options]                                 List indexes in your project's Cloud Firestore database.
+  functions:config:clone [options]                            clone environment config from another project
+  functions:config:get [path]                                 fetch environment config stored at the given path
+  functions:config:set [values...]                            set environment config with key=value syntax
+  functions:config:unset [keys...]                            unset environment config at the specified path(s)
+  functions:delete [options] [filters...]                     delete one or more Cloud Functions by name or group name.
+  functions:log [options]                                     read logs from deployed functions
+  functions:shell [options]                                   launch full Node shell with emulated functions
+  functions:list                                              list all deployed functions in your Firebase project
+  help [command]                                              display help information
+  hosting:channel:create [options] [channelId]                create a Firebase Hosting channel
+  hosting:channel:delete [options] <channelId>                delete a Firebase Hosting channel
+  hosting:channel:deploy [options] [channelId]                deploy to a specific Firebase Hosting channel
+  hosting:channel:list [options]                              list all Firebase Hosting channels for your project
+  hosting:channel:open [options] [channelId]                  opens the URL for a Firebase Hosting channel
+  hosting:clone <source> <targetChannel>                      clone a version from one site to another
+  hosting:disable [options]                                   stop serving web traffic to your Firebase Hosting site
+  hosting:sites:create [options] [siteId]                     create a Firebase Hosting site
+  hosting:sites:delete [options] <siteId>                     delete a Firebase Hosting site
+  hosting:sites:get <siteId>                                  print info about a Firebase Hosting site
+  hosting:sites:list                                          list Firebase Hosting sites
+  init [feature]                                              Interactively configure the current directory as a Firebase project or initialize 
+new features in an already configured Firebase project directory.
+
+  This command will create or update 'firebase.json' and '.firebaserc' configuration files in the current directory.
+
+  To initialize a specific Firebase feature, run 'firebase init [feature]'. Valid features are:
+
+    - database
+    - emulators
+    - firestore
+    - functions
+    - hosting
+    - hosting:github
+    - remoteconfig
+    - storage
+  login [options]                                             log the CLI into Firebase
+  login:add [options] [email]                                 authorize the CLI for an additional account
+  login:ci [options]                                          generate an access token for use in non-interactive environments
+  login:list                                                  list authorized CLI accounts
+  login:use <email>                                           set the default account to use for this project directory
+  logout [email]                                              log the CLI out of Firebase
+  open [link]                                                 quickly open a browser to relevant project resources
+  projects:addfirebase [projectId]                            add Firebase resources to a Google Cloud Platform project
+  projects:create [options] [projectId]                       creates a new Google Cloud Platform project, then adds Firebase resources to      
+                                                              the project
+  projects:list                                               list all Firebase projects you have access to
+  remoteconfig:get [options]                                  get a Firebase project's Remote Config template
+                                                              the provided version number
+                                                              Firebase project
+  serve [options]                                             start a local server for your static assets
+  setup:emulators:database                                    downloads the database emulator
+  setup:emulators:firestore                                   downloads the firestore emulator
+  setup:emulators:pubsub                                      downloads the pubsub emulator
+  setup:emulators:storage                                     downloads the storage emulator
+  setup:emulators:ui                                          downloads the ui emulator
+  target [type]                                               display configured deploy targets for the current project
+  target:apply <type> <name> <resources...>                   apply a deploy target to a resource
+  target:clear <type> <target>                                clear all resources from a named resource target
+  target:remove <type> <resource>                             remove a resource target
+  use [options] [alias_or_project_id]                         set an active Firebase project for your working directory
+PS E:\Flutter_Projects\flutter_chat> firebase login --no-localhost
+Already logged in as pushpakbhosaledeveloper@gmail.com
+PS E:\Flutter_Projects\flutter_chat> firebase deploy
+
+=== Deploying to 'flutter-chat-9dbfb'...
+
+i  deploying functions
+Running command: npm --prefix "%RESOURCE_DIR%" run lint
+
+> functions@ lint E:\Flutter_Projects\flutter_chat\functions
+> eslint .
+
+
+E:\Flutter_Projects\flutter_chat\functions\index.js
+  4:1   error  Expected indentation of 4 spaces but found 2   indent
+  4:13  error  Strings must use doublequote                   quotes
+  5:1   error  Expected indentation of 4 spaces but found 2   indent
+  6:1   error  Expected indentation of 6 spaces but found 5   indent
+  7:1   error  Expected indentation of 4 spaces but found 2   indent
+  7:6   error  Newline required at end of file but not found  eol-last
+
+✖ 6 problems (6 errors, 0 warnings)
+  6 errors and 0 warnings potentially fixable with the `--fix` option.
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! functions@ lint: `eslint .`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the functions@ lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Pushpak\AppData\Roaming\npm-cache\_logs\2021-10-18T13_33_50_369Z-debug.log
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn npm --prefix "E:\Flutter_Projects\flutter_chat\functions" run lint ENOENT
+    at notFoundError (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:40:16)
+b\enoent.js:27:25)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12)
+Emitted 'error' event on ChildProcess instance at:
+    at ChildProcess.cp.emit (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:30:37)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12) {
+  code: 'ENOENT',
+  errno: 'ENOENT',
+  syscall: 'spawn npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run lint',
+  path: 'npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run lint',
+  spawnargs: []
+}
+
+Error: functions predeploy error: Command terminated with non-zero exit code1
+PS E:\Flutter_Projects\flutter_chat> firebase deploy
+
+=== Deploying to 'flutter-chat-9dbfb'...
+
+i  deploying functions
+Running command: npm --prefix "%RESOURCE_DIR%" run lint
+
+> functions@ lint E:\Flutter_Projects\flutter_chat\functions
+> eslint .
+
+
+E:\Flutter_Projects\flutter_chat\functions\index.js
+  4:1   error  Expected indentation of 4 spaces but found 3   indent
+  4:14  error  Strings must use doublequote                   quotes
+  5:1   error  Expected indentation of 4 spaces but found 3   indent
+  7:1   error  Expected indentation of 4 spaces but found 3   indent
+  7:7   error  Newline required at end of file but not found  eol-last
+
+✖ 5 problems (5 errors, 0 warnings)
+  5 errors and 0 warnings potentially fixable with the `--fix` option.
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! functions@ lint: `eslint .`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the functions@ lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Pushpak\AppData\Roaming\npm-cache\_logs\2021-10-18T13_35_19_059Z-debug.log
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn npm --prefix "E:\Flutter_Projects\flutter_chat\functions" run lint ENOENT
+    at notFoundError (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at ChildProcess.cp.emit (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:27:25)
+Emitted 'error' event on ChildProcess instance at:
+    at ChildProcess.cp.emit (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:30:37)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12) {
+  code: 'ENOENT',
+  errno: 'ENOENT',
+  syscall: 'spawn npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run lint',
+  path: 'npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run lint',
+  spawnargs: []
+}
+
+Error: functions predeploy error: Command terminated with non-zero exit code1
+
+Having trouble? Try firebase [command] --help
+PS E:\Flutter_Projects\flutter_chat> firebase deploy
+
+=== Deploying to 'flutter-chat-9dbfb'...
+
+i  deploying functions
+Running command: npm --prefix "%RESOURCE_DIR%" run lint
+
+> functions@ lint E:\Flutter_Projects\flutter_chat\functions
+> eslint
+
+Running command: npm --prefix "%RESOURCE_DIR%" run build
+npm ERR! missing script: build
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Pushpak\AppData\Roaming\npm-cache\_logs\2021-10-18T13_38_41_019Z-debug.log
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn npm --prefix "E:\Flutter_Projects\flutter_chat\functions" run build ENOENT
+    at notFoundError (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:40:16)
+b\enoent.js:27:25)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12)
+Emitted 'error' event on ChildProcess instance at:
+    at ChildProcess.cp.emit (C:\Users\Pushpak\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-env\node_modules\cross-spawn\lib\enoent.js:30:37)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:282:12) {
+  code: 'ENOENT',
+  errno: 'ENOENT',
+  syscall: 'spawn npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run build',
+  path: 'npm --prefix "E:\\Flutter_Projects\\flutter_chat\\functions" run build',
+  spawnargs: []
+}
+
+Error: functions predeploy error: Command terminated with non-zero exit code1
+PS E:\Flutter_Projects\flutter_chat> firebase deploy
+
+=== Deploying to 'flutter-chat-9dbfb'...
+
+i  deploying functions
+Running command: npm --prefix "$RESOURCE_DIR" run lint
+
+> functions@ lint E:\Flutter_Projects\flutter_chat\functions
+> eslint
+
++  functions: Finished running predeploy script.
+i  functions: ensuring required API cloudfunctions.googleapis.com is enabled...
+i  functions: ensuring required API cloudbuild.googleapis.com is enabled...
++  functions: required API cloudfunctions.googleapis.com is enabled
+!  functions: missing required API cloudbuild.googleapis.com. Enabling now...
+
+Error: Your project flutter-chat-9dbfb must be on the Blaze (pay-as-you-go) plan to complete this command. Required API cloudbuild.googleapis.com can't be enabled until the upgrade is complete. To upgrade, visit the following URL:
+
+https://console.firebase.google.com/project/flutter-chat-9dbfb/usage/details
+
+Having trouble? Try firebase [command] --help
+PS E:\Flutter_Projects\flutter_chat>
+
+
+
+
+
